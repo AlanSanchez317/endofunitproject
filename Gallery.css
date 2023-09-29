@@ -1,0 +1,63 @@
+body{
+    background-image: url(../Downloads/scattered-forcefields.svg);
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: [one] 1fr [two] 1fr [three] 1fr [last];
+    grid-template-columns:[first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [end];
+    padding: 5px;
+    gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+    width: 80%;
+    margin-left: 10%;
+}
+.image1{
+    display: flex;
+    grid-area: image1;
+    grid-row: one/two;
+    grid-column:first/second;
+}
+.image2{
+    display: flex;
+    grid-area: image2;
+    grid-row: one/two;
+    grid-column: second/third;
+}
+.image3{
+    display: flex;
+    grid-area: image3;
+    grid-row: one/two;
+    grid-column: third/fourth;
+}
+.image4{
+    display: flex;
+    grid-area: image4;
+    grid-row: one/two;
+    grid-column: fourth/end;
+}
+.image5{
+    display: flex;
+    grid-area: image5;
+    grid-row: two/three;
+    grid-column: first/second;
+}
+.image6{
+    display: flex;
+    grid-area: image6;
+    grid-row: two/three;
+    grid-column: second/third;
+}
+.image7{
+    display: flex;
+    grid-area: image7;
+    grid-row: two/three;
+    grid-column: third/fourth;
+}
+.image8{
+    display: flex;
+    grid-area: image8;
+    grid-row: two/three;
+    grid-column: fourth/fifth;
+}
