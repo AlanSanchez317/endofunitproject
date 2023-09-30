@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
+    <title>Merge | Checkout</title>
+    <meta name="author" content="Alan Sanchez, Oliver Kuopus">
+    <meta name=”description” content="End of Unit Project">
+    <meta property=”og:image” content="">
+    <meta property=”og:description” content="Merge">
+    <meta property=”og:title” content="Merge Cases">
+    <link rel="stylesheet" type="text/css" href="./checkoutcss.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
 </head>
 <body>
-    
+    <body>
+        <div class="navbar" >
+            <a class="mergelogo" href="#">Merge</a>
+        <div class="navbarlistitems">
+            <ul>
+                <li><a class="Home" href="#">Home</a></li>
+                <li><a class="Gallery" href="#">Gallery</a></li>
+                <li><a class="Services" href="#">Services</a></li>
+                <li><a class="Checkout" href="#">Checkout</a></li>
+            </ul>
+        </div>
+        </div>
+
+<hr>
+
+<fieldset>
+    <form style="font-family: Abduction2002;">
+        <h1>Payment Form</h1><br>
+        <p>Required Fields are followed by *</p><br>
+        <h2>Contact Information</h2><br>
+        <fieldset>
+            <legend>Order Information</legend><br>
+<label for="iphonecase">Iphone Cases</label> <br>
+            <select name="iphonecase" id="iphonecase"><br> 
+                <option value="iphonecasex1">IphoneX Red Case</option><br>
+                <option value="iphonecasex2">IphoneX Blue Case</option><br>
+                <option value="iphonecasex3">IphoneX White Case</option><br>
+                <option value="iphonecasex4">IphoneX Black Case</option><br>
+                <option value="iphonecasex5">IphoneX Pink Case</option><br>
+                <option value="iphonecase111">Iphone11 Red Case</option><br>
+                <option value="iphonecase112">Iphone11 Blue Case</option><br>
+                <option value="iphonecase113">Iphone11 White Case</option><br>
+                <option value="iphonecase114">Iphone11 Black Case</option><br>
+                <option value="iphonecase115">Iphone11 Pink Case</option><br>
+                <option value="iphonecase121">Iphone12 Red Case</option><br>
+                <option value="iphonecase122">Iphone12 Blue Case</option><br>
+                <option value="iphonecase123">Iphone12 White Case</option><br>
+                <option value="iphonecase124">Iphone12 Black Case</option><br>
+                <option value="iphonecase125">Iphone12 Pink Case</option><br>
+                <option value="iphonecase131">Iphone13 Red Case</option><br>
+                <option value="iphonecase132">Iphone13 Blue Case</option><br>
+                <option value="iphonecase133">Iphone13 White Case</option><br>
+                <option value="iphonecase134">Iphone13 Black Case</option><br>
+                <option value="iphonecase135">Iphone13 Pink Case</option><br>
+                <option value="iphonecase1141">Iphone14 Red Case</option><br>
+                <option value="iphonecase142">Iphone14 Blue Case</option><br>
+                <option value="iphonecase143">Iphone14 White Case</option><br>
+                <option value="iphonecase144">Iphone14 Black Case</option><br>
+                <option value="iphonecase145">Iphone14 Pink Case</option><br>
+
+        </fieldset> <br>
+        <br>
+        <br><label for="name" >Name: *</label><br>
+        <input type="text" name="name" id="name" placeholder="John Smith"><br>
+        <label for="email" >Email: *</label><br>
+        <input type="mail" name="email" id="email" placeholder="johnsmith@aol.com"><br>
+        <label for="password" >Password: *</label><br>
+        <input type="password" name="password" id="password" placeholder="JohnSmith123"><br>
+        <h2>Payment Information</h2><br>
+        <label for="card">Card Type: *</label><br>
+        <select name="card" id="card"><br>
+        <option value="visa">Visa</option><br>
+        <option value="MasterCard">MasterCard</option><br>
+        <option value="CapitalOne">Capital One</option><br>
+        <option value="Amex">American Express</option><br>
+    </select><br>
+        <label for="CardName">Card Name: *</label><br>
+        <input type="text" name="CardName" id="CardName" placeholder="John Smith"><br>
+        <label for="expiration">Expiration Date: *</label><br>
+        <input type="date" id="expiration" name="expiration"><br>
+    <div class="buttoncenter">
+        <button type="submit">Validate the Payment</button><br>
+    </div>
+    </form>
+    </fieldset>
+
 </body>
 </html>
