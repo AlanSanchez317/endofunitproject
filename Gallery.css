@@ -1,17 +1,20 @@
 body{
     background-image: url(../Downloads/scattered-forcefields.svg);
-}
 
+}
+/* Grid below */
 .grid{
     display: grid;
-    grid-template-rows: [one] 1fr [two] 1fr [three] 1fr [last];
+    grid-template-rows: [one] 1fr [two] 1fr [three];
     grid-template-columns:[first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [end];
     padding: 5px;
-    gap: 5px;
+    gap: [row gap] [col gap];
+    gap: 1rem .5rem;
     justify-items: stretch;
-    align-items: stretch;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin: auto;
+    justify-items: center;
+    align-content: center;
 }
 .image1{
     display: flex;
@@ -60,4 +63,80 @@ body{
     grid-area: image8;
     grid-row: two/three;
     grid-column: fourth/fifth;
+}
+/* Header section below */
+header{
+    display: flex;
+    border: 10px solid black;
+    width: 90%;
+    height: 3rem;
+    padding: 1rem;
+    margin: auto;
+    justify-content: center;
+    background-color: lightblue;
+    text-align: center;
+}
+header div{
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px grey;
+}
+/* Signature cases text below */
+.signature_cases{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-content: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+/* Navbar below */
+nav{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333333;
+    color: white;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  li {
+    display: flex;
+    margin: auto;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  li:hover {
+    background-color: #111111;
+  }
+/* Footer below */
+footer{
+    border: .2rem solid black;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 1rem;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    margin: auto;
+    font-size: smaller;
+    justify-content:center;
 }
