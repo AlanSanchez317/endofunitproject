@@ -24,7 +24,7 @@ nav{
     margin: auto;
     justify-content: center;
 }
-ul {
+nav ul {
     display: flex;
     list-style-type: none;
     width: 90%;
@@ -35,8 +35,9 @@ ul {
     color: white;
     margin-top: 1rem;
     justify-content: center;
+    text-decoration: none;
 }
-li {
+ nav li {
     display: flex;
     margin: auto;
     color: white;
@@ -44,9 +45,13 @@ li {
     text-decoration: none;
     margin-left: 3rem;
     margin-right: 3rem;
+    text-decoration: none;
 }
-li:hover {
+nav li:hover {
     background-color: #111111;
+}
+nav li:visited{
+    color: white;
 }
 .Services{
     display: flex;
@@ -61,26 +66,37 @@ footer{
     border: .2rem solid black;
     margin: auto;
     padding: 10px;
-    justify-content: center;
-    align-content: center;
     width: 90%;
     height: 1rem;
     text-align: center;
 }
 .footer{
-    display: flex;
+    display: flexbox;
     margin: auto;
     font-size: smaller;
-    justify-content:center;
+    justify-content: center;
 }
 .grid{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
-    gap: 10px;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
     width: 90%;
     margin: auto;
     justify-content: center;
-    
+    align-items: center;
+    margin-bottom:12rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+.Services_1{
+    display: flexbox;
+    margin-right: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.Services_2{
+    display: flexbox;
+    margin-left: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
