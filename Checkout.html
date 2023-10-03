@@ -10,6 +10,7 @@
     <meta property=”og:description” content="Merge">
     <meta property=”og:title” content="Merge Cases">
     <link rel="stylesheet" type="text/css" href="./checkout.css">
+    <link rel="stylesheet" type="text/css" href="./homepage.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
 </head>
@@ -29,14 +30,15 @@
 <hr>
 
 <fieldset>
-    <form style="font-family: Abduction2002;">
+    <form>
         <h1>Payment Form</h1><br>
         <p>Required Fields are followed by *</p><br>
         <h2>Contact Information</h2><br>
         <fieldset>
             <legend>Order Information</legend><br>
-<label for="iphonecase">Iphone Cases</label> <br>
+            <label for="iphonecase">Iphone Cases</label> <br>
             <select name="iphonecase" id="iphonecase"><br> 
+                <option value="iphonecasenone">None</option>
                 <option value="iphonecasex1">IphoneX Red Case</option><br>
                 <option value="iphonecasex2">IphoneX Blue Case</option><br>
                 <option value="iphonecasex3">IphoneX White Case</option><br>
@@ -62,15 +64,48 @@
                 <option value="iphonecase143">Iphone14 White Case</option><br>
                 <option value="iphonecase144">Iphone14 Black Case</option><br>
                 <option value="iphonecase145">Iphone14 Pink Case</option><br>
-
-        </fieldset> <br>
+                <br>
+        </select><br>
+    <label for="samsungcase">Samsung Cases</label> <br>
+    <select name="samsungcase" id="samsungcase"><br> 
+        <option value="Sansungcasenone">None</option>
+        <option value="SamsungGalaxyS201">Samsung Galaxy S20 Red Case</option><br>
+        <option value="SamsungGalaxyS202">Samsung Galaxy S20 Blue Case</option><br>
+        <option value="SamsungGalaxyS203">Samsung Galaxy S20 White Case</option><br>
+        <option value="SamsungGalaxyS204">Samsung Galaxy S20 Black Case</option><br>
+        <option value="SamsungGalaxyS205">Samsung Galaxy S20 Pink Case</option><br>
+        <option value="SamsungGalaxyS211">Samsung Galaxy S21 Red Case</option><br>
+        <option value="SamsungGalaxyS212">Samsung Galaxy S21 Blue Case</option><br>
+        <option value="SamsungGalaxyS213">Samsung Galaxy S21 White Case</option><br>
+        <option value="SamsungGalaxyS214">Samsung Galaxy S21 Black Case</option><br>
+        <option value="SamsungGalaxyS215">Samsung Galaxy S21 Pink Case</option><br>
+        <option value="SamsungGalaxyS221">Samsung Galaxy S22 Red Case</option><br>
+        <option value="SamsungGalaxyS222">Samsung Galaxy S22 Blue Case</option><br>
+        <option value="SamsungGalaxyS223">Samsung Galaxy S22 White Case</option><br>
+        <option value="SamsungGalaxyS224">Samsung Galaxy S22 Black Case</option><br>
+        <option value="SamsungGalaxyS225">Samsung Galaxy S22 Pink Case</option><br>
+        <option value="SamsungGalaxyS231">Samsung Galaxy S23 Red Case</option><br>
+        <option value="SamsungGalaxyS232">Samsung Galaxy S23 Blue Case</option><br>
+        <option value="SamsungGalaxyS233">Samsung Galaxy S23 White Case</option><br>
+        <option value="SamsungGalaxyS234">Samsung Galaxy S23 Black Case</option><br>
+        <option value="SamsungGalaxyS235">Samsung Galaxy S203Pink Case</option><br>
         <br>
+    </select><br>
+        <br>
+        <br>
+        <h2>User Information</h2>
         <br><label for="name" >Name: *</label><br>
         <input type="text" name="name" id="name" placeholder="John Smith"><br>
         <label for="email" >Email: *</label><br>
         <input type="mail" name="email" id="email" placeholder="johnsmith@aol.com"><br>
         <label for="password" >Password: *</label><br>
         <input type="password" name="password" id="password" placeholder="JohnSmith123"><br>
+        <label for="address">Home Address: *</label>
+        <input type="address" name="address" id="address" placeholder="123 W Huckleberry Rd"><br>
+        <label for="city">City: *</label>
+        <input type="city" name="city" id="city" placeholder="Pheonix"><br>
+        <label for="zipcode">ZIP Code: *</label>
+        <input type="zipcode" name="zipcode" id="zipcode" placeholder="00001"><br>
         <h2>Payment Information</h2><br>
         <label for="card">Card Type: *</label><br>
         <select name="card" id="card"><br>
