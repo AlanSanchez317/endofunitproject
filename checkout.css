@@ -103,3 +103,7 @@ button {
     text-align-last: center;
     padding-left: 25px;
 }
+
+fieldset{
+    text-align: center;
+}
